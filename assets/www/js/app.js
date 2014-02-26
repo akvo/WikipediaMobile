@@ -226,7 +226,7 @@ window.app = function() {
 		params = params || {};
 		params.format = 'json'; // Force JSON
 		lang = lang || preferencesDB.get('language');
-		var url = app.baseUrlForLanguage(lang) + '/w/api.php';
+		var url = app.baseUrlForLanguage(lang) + '/wiki/api.php';
 		var defaultOptions = {
 			url: url,
 			data: params,
