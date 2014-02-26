@@ -173,9 +173,6 @@ window.app = function() {
 			currentHistoryIndex += 1;
 			pageHistory[currentHistoryIndex] = url;
 		}
-		if(title === "") {
-			title = "Main_Page"; // FIXME
-		}
 		d = app.loadPage( title, lang, options.isCompletePage );
 		d.done(function(page) {
 			if(options.hideCurrent) {
