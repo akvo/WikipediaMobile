@@ -40,6 +40,6 @@
 			<intent-filter>
 			</intent-filter>
 		</activity>
-		<provider android:name="org.wikipedia.SearchSuggestionsProvider" android:authorities="org.wikipedia.searchsuggestions"></provider>
+		<provider android:name="org.wikipedia.SearchSuggestionsProvider" android:authorities="org.akvopedia.searchsuggestions"></provider>
 	</application>
 </manifest>
