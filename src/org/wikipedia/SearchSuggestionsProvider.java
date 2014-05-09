@@ -50,7 +50,7 @@ public class SearchSuggestionsProvider extends ContentProvider {
 
 			String[] columnNames = { BaseColumns._ID, SearchManager.SUGGEST_COLUMN_TEXT_1, SearchManager.SUGGEST_COLUMN_INTENT_DATA };
 			MatrixCursor cursor = new MatrixCursor(columnNames);
-			String content = HttpApi.getContent("http://" + lang + ".akvopedia.org/wiki/api.php?action=opensearch&limit=10&namespace=0&format=json&search=" + URLEncoder.encode(query, "UTF-8"));
+			String content = HttpApi.getContent("http://" + lang + ".akvopedia.org/s_wiki/api.php?action=opensearch&limit=10&namespace=0&format=json&search=" + URLEncoder.encode(query, "UTF-8"));
 			JSONArray response = new JSONArray(content);
 			JSONArray suggestions = response.getJSONArray(1);
 			int lenght = suggestions.length();

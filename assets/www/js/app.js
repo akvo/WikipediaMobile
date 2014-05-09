@@ -223,7 +223,7 @@ window.app = function() {
 		params = params || {};
 		params.format = 'json'; // Force JSON
 		lang = lang || preferencesDB.get('language');
-		var url = app.baseUrlForLanguage(lang) + '/wiki/api.php';
+		var url = app.baseUrlForLanguage(lang) + '/s_wiki/api.php';
 		var defaultOptions = {
 			url: url,
 			data: params,
