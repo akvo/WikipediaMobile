@@ -19,8 +19,8 @@ public class WikipediaApp extends Application {
 	// Which changed the path Databases are stored in
 	private void migrateDatabaseFromvc1() {
 		Log.d("PhoneGapLog", "Migration happening");
-		File v1File = new File("/data/data/org.wikipedia/databases/savedPagesDB.db");
-		File v10File = new File("/data/data/org.wikipedia/app_database:savedPagesDB.db");
+		File v1File = new File("/data/data/org.akvopedia/databases/savedPagesDB.db");
+		File v10File = new File("/data/data/org.akvopedia/app_database:savedPagesDB.db");
 		if(!v1File.exists()) {
 			// New install - no v1 files to be removed
 			return;

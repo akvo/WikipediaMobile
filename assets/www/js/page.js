@@ -193,7 +193,7 @@
 
 	Page.prototype.getHistoryUrl = function() {
 		// This is uncaught by our intent filters, so will go directly to browser
-		return app.baseUrlForLanguage(this.lang) + "/w/index.php?title=" + encodeURIComponent(this.title.replace(/ /g, '_')) + "&action=history";
+		return app.baseUrlForLanguage(this.lang) + "/wiki/index.php?title=" + encodeURIComponent(this.title.replace(/ /g, '_')) + "&action=history";
 	}
 
 	Page.prototype.getCanonicalUrl = function() {
@@ -203,7 +203,7 @@
 	// Returns an API URL that makes a request that retreives this page
 	// Should mimic params from Page.requestFromTitle
 	Page.prototype.getAPIUrl = function() {
-		return app.baseUrlForLanguage(this.lang) + '/w/api.php?format=json&action=mobileview&page=' + encodeURIComponent(this.title) + '&redirects=1&prop=sections|text&sections=all&sectionprop=level|line&noheadings=true';
+		return app.baseUrlForLanguage(this.lang) + '/wiki/api.php?format=json&action=mobileview&page=' + encodeURIComponent(this.title) + '&redirects=1&prop=sections|text&sections=all&sectionprop=level|line&noheadings=true';
 	};
 
 	Page.prototype.getCanonicalUrl = function() {
